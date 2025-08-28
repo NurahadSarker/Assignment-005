@@ -11,17 +11,26 @@ for(let heartBtn of heartBtns){
     })
 }
 
+const callHistoryData = [];
 // coin count
 document.getElementById("call-btn-1").addEventListener('click', function(){
     const callBtnValue = 20;
     const coinValue = parseInt(document.getElementById('coin-count').innerText)
     console.log(coinValue)
     if(coinValue > 0){
-        alert('calling.....')
+        alert('📞Calling National Emergency Service 999...')
         const count = coinValue - callBtnValue;
         document.getElementById('coin-count').innerText = count;
     }
     else{
-        alert('Not enough coin....')
+        alert("❌You don't have enough coins. You need at least 20 coins to make a call.")
     }
+
+    const historyData = {
+        name: "National Emergency Number",
+        date: new Date().toLocaleTimeString(),
+    }
+
+    callHistoryData.push(historyData)
+    console.log(callHistoryData)
 })
