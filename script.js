@@ -174,9 +174,10 @@ document.getElementById("call-btn-4").addEventListener('click', function(){
 
     const historyData = {
         name: "Ambulance Service",
-        number: 1994-999999,
+        number: ("1994-999999"),
         date: new Date().toLocaleTimeString(),
     }
+
 
     callHistoryData.push(historyData)
     console.log(callHistoryData)
