@@ -40,8 +40,8 @@
                     <h1 id="coin-count" class="font-black text-[16px] mr-[10px]">100</h1>
                     <img class="w-[30px]" src="assets/coin.png" alt="image">
                 </div>
-                <div id="copy-count" class="copy-section flex justify-center items-center w-[80px] h-[35px] sm:w-[123px] sm:h-[52px] bg-[#00A63E] rounded-full sm:ml-[20px]">
-                    <h1 class="font-black text-[16px] text-white"><span>0</span>  Copy</h1>
+                <div class="copy-section flex justify-center items-center w-[80px] h-[35px] sm:w-[123px] sm:h-[52px] bg-[#00A63E] rounded-full sm:ml-[20px]">
+                    <h1 class="font-black text-[16px] text-white"><span id="copy-count">0</span>  Copy</h1>
                 </div>
             </div>
         </nav>
@@ -67,12 +67,12 @@
                         </div>
                         <h1 class="text-[18px] font-bold">National Emergency Number</h1>
                         <p class="text-[16px] text-[#5C5C5C] mb-[10px]">National Emergency Service</p>
-                        <h1 class="text-[22px] font-bold">999</h1>
+                        <h1 id="copy-text-1" class="text-[22px] font-bold">999</h1>
                         <div class="w-[40px] h-[30px] bg-[#F2F2F2] flex items-center justify-center rounded-full mb-[20px]">
                             <p class="text-[16px] text-[#5C5C5C]">All</p>
                         </div>
                         <div class="flex justify-between">
-                            <button class="btn text-[16px] text-[#5C5C5C] bg-white hover:bg-gray-50 w-[120px] rounded-lg"><i class="fa-regular fa-copy"></i> Copy</button>
+                            <button id="copy-btn-1" class="btn text-[16px] text-[#5C5C5C] bg-white hover:bg-gray-50 w-[120px] rounded-lg"><i class="fa-regular fa-copy"></i> <span id="copy-btn">Copy</span></button>
                             <button id="call-btn-1" class="btn text-[16px] text-[#ffffff] bg-[#00A63E] hover:bg-[#17e964] w-[120px] rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
                         </div>
                 </div>

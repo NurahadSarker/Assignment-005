@@ -1,4 +1,4 @@
-// heart count
+// heart count function
 const heartBtns = document.getElementsByClassName("heart-btn")
 for(let heartBtn of heartBtns){
     heartBtn.addEventListener('click', function(e){
@@ -12,7 +12,7 @@ for(let heartBtn of heartBtns){
 }
 
 
-// coin count
+// coin count and calling function
 document.getElementById("call-btn-1").addEventListener('click', function(){
     const callHistoryData = [];
     const callBtnValue = 20;
@@ -174,10 +174,10 @@ document.getElementById("call-btn-4").addEventListener('click', function(){
 
     const historyData = {
         name: "Ambulance Service",
-        number: ("1994-999999"),
+        number: "1994-999999",
         date: new Date().toLocaleTimeString(),
     }
-
+    
 
     callHistoryData.push(historyData)
     console.log(callHistoryData)
@@ -443,4 +443,25 @@ document.getElementById("call-btn-9").addEventListener('click', function(){
 document.getElementById('clearBtn').addEventListener('click', function(){
     const callHistory = document.getElementById('call-history-container')
     callHistory.innerText = ""
+})
+
+
+// copy count function
+document.getElementById('copy-btn-1').addEventListener('click', function(){
+    const copyText = document.getElementById('copy-text-1').innerText
+    navigator.clipboard.writeText(copyText)
+    const copyBtn = document.getElementById('copy-btn')
+    const defaultText = copyBtn.innerText
+    copyBtn.innerText = "Copied!"
+    setTimeout(function(){
+        copyBtn.innerText = defaultText
+    }, 500)
+
+    const btnValue = 1;
+    const copyCount = parseInt(document.getElementById('copy-count').innerText)
+    console.log(copyCount)
+    const copyCountValue = btnValue + copyCount;
+    document.getElementById('copy-count').innerText = copyCountValue;
+
+    
 })
