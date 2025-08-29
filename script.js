@@ -555,10 +555,10 @@ document.getElementById('copy-btn-6').addEventListener('click', function(){
 })
 
 
-document.getElementById('copy-btn-6').addEventListener('click', function(){
-    const copyText = document.getElementById('copy-text-6').innerText
+document.getElementById('copy-btn-7').addEventListener('click', function(){
+    const copyText = document.getElementById('copy-text-7').innerText
     navigator.clipboard.writeText(copyText)
-    const copyBtn = document.getElementById('copy-btn-06')
+    const copyBtn = document.getElementById('copy-btn-07')
     const defaultText = copyBtn.innerText
     copyBtn.innerText = "Copied!"
     setTimeout(function(){
